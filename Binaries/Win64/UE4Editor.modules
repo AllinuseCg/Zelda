@@ -1,0 +1,9 @@
+{
+	"Changelist" : 3249277,
+	"CompatibleChangelist" : 3195953,
+	"BuildId" : "bd77e187-f0c4-4bc5-87d2-f98ffc183412",
+	"Modules" : 
+	{
+		"zelda" : "UE4Editor-zelda-9675.dll"
+	}
+}
