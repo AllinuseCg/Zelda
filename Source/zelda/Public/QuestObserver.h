@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "QuestObserver.generated.h"
 
@@ -13,18 +14,18 @@ class ZELDA_API UQuestObserver : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
-	UQuestObserver();
+		UQuestObserver();
 
 	static UQuestObserver* Ins;
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FQuestMSGs, FString, msg, int32, num);
-	
+
 public:
 	UFUNCTION(BluePrintPure, Category = "QuestObserver")
 		static UQuestObserver* getQuestObserver();
 
-	
-	UPROPERTY(BlueprintAssignable,BlueprintCallable, Category = "QuestObserver")
-	FQuestMSGs sendMSGToQuestObserver;
 
-	
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "QuestObserver")
+		FQuestMSGs sendMSGToQuestObserver;
+
+
 };

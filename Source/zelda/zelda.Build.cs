@@ -4,8 +4,10 @@ using UnrealBuildTool;
 
 public class zelda : ModuleRules
 {
-	public zelda(TargetInfo Target)
+	public zelda(ReadOnlyTargetRules Target) : base(Target)
 	{
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
