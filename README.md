@@ -4,7 +4,7 @@ The characer has a sword and a shield just like link so I named it Zelda.But the
 
 please switch to "old_backup" branch 
 
-get the release .exe :https://github.com/AllinuseCg/Justazelda/releases
+get the release .exe :https://github.com/AllinuseCg/Justazelda/releases/tag/theFirstPackagedVersion
 
 # how to play :  
 WASD               To  move  
